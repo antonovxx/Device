@@ -1,8 +1,21 @@
-@font-face {
-  font-style: normal;
-  font-weight: 400;
-  font-family: "";
 
+@font-face {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
+  src: url("../../fonts/raleway-800.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../../fonts/rubik-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../../fonts/rubik-700.woff2") format("woff2");
 }

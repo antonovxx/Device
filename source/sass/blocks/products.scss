@@ -1,0 +1,112 @@
+.products {
+  position: absolute;
+  top: 250px;
+  width: 1160px;
+}
+
+.products__slide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.products__slide-content {
+  display: flex;
+  flex-direction: column;
+  padding: 99px 0;
+  margin-left: 20px;
+}
+
+.products__slide-description-subtitle {
+  padding: 0;
+  margin: 0;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.products__slide-description-text {
+  margin: 29px 0 60px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.products__slide-description-link {
+  width: 210px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.products__slide-description-link::before {
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  height: 8px;
+  background-color: #ffe17f;
+  position: absolute;
+  z-index: -1;
+}
+
+.products__slide-description-list {
+  display: flex;
+  gap: 20px;
+}
+
+.products__slide-details--wrapper {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.products__slide-details-title {
+  margin-top: 12px;
+  order: 2;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.products__slide-details-description {
+  font-size: 36px;
+  line-height: 30px;
+}
+
+.products__slider-controls--button {
+  border: none;
+  background-color: inherit;
+}
+
+.products__slide-img {
+  position: relative;
+}
+
+.slider-controls-left {
+  cursor: pointer;
+  content: "";
+  width: 20px;
+  height: 60px;
+  left: 47%;
+  top: 33%;
+  position: absolute;
+  background-image: url("../../img/svg/swiper-control-right.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slider-controls-right {
+  cursor: pointer;
+  content: "";
+  width: 20px;
+  height: 60px;
+  right: 96%;
+  top: 33%;
+  position: absolute;
+  background-image: url("../../img/svg/swiper-control-left.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}

@@ -1,0 +1,56 @@
+.delivery {
+  width: 1160px;
+  min-height: 100px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.delivery__block-image {
+  width: 125px;
+  height: 100px;
+  background-color: #FFE17F;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("../../img/svg/delivery-car-image.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 47px 30px;
+}
+
+.delivery__suggestion {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.delivery__tooltip-icon {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(220, 220, 220, 0.5);;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 46px;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+}
+
+.delivery__tooltip-icon::before {
+  position: absolute;
+  width: 2px;
+  height: 12px;
+  color: #000000;
+  content: "i";
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

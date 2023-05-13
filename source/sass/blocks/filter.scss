@@ -1,0 +1,53 @@
+.filter {
+  background-color: #f0f0f0;
+  padding: 25px 20px 200px 60px;
+}
+
+.filter__title {
+  margin: 0;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 72px;
+}
+
+.filter__form-title {
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  position: relative;
+}
+
+.filter__form-title::before {
+  content: "";
+  width: 200px;
+  height: 2px;
+  position: absolute;
+  background-color: #000000;
+  top: -12px;
+  left: 0;
+}
+
+.filter__form-slider {
+  padding: 30px 0 30px 0;
+}
+
+.filter__form-list {
+  margin-top: 20px;
+}
+
+.filter__form-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.filter__form-item-control {
+  padding-left: 16px;
+}

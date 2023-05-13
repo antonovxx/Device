@@ -1,0 +1,28 @@
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 16px 0 0 0;
+}
+
+.breadcrumbs__item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 36px;
+  position: relative;
+}
+
+.breadcrumbs__item:not(:last-child)::before {
+  content: "";
+  background-image: url("../../img/svg/breadcrumbs-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 7px;
+  height: 10px;
+  position: absolute;
+  right: -22px;
+  top: 50%;
+  transform: translateY(-50%);
+}

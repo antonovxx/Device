@@ -1,0 +1,52 @@
+.about {
+  padding: 0 100px 20px 0;
+}
+
+.about__title {
+  margin: 40px 0 18px;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.about__description {
+  margin: 30px 0;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.about__list {
+  list-style: disc;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.about__item {
+  margin: 15px 0 20px 20px;
+}
+
+.about__link-details {
+  margin-top: 20px;
+  margin-left: 18px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.about__link-details::before {
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 270px;
+  height: 8px;
+  background-color: #ffe17f;
+  position: absolute;
+  z-index: -1;
+}

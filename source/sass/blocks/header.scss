@@ -1,0 +1,219 @@
+.header {
+  min-height: 300px;
+  padding: 0;
+  margin: 0;
+  padding: 46px 60px 148px 60px;
+  margin: 40px 140px 0 140px;
+  position: relative;
+  background: #ffe17f;
+}
+
+.header__wrapper {
+  background: #ffe17f;
+  width: 100%;
+  height: 100%;
+}
+
+.header__catalog {
+  min-height: 186px;
+  padding: 46px 60px 34px 60px;
+}
+
+.header__logo {
+  position: absolute;
+  top: -20px;
+  left: 60px;
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 53px;
+}
+
+.header__user-navigation {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.header__search-form {
+  width: 517px;
+  min-height: 40px;
+  display: flex;
+}
+
+.header__search-form--input {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 10px 10px 50px;
+  border: 2px solid #000000;
+  border-radius: 50px 0px 0px 50px;
+  background-color: #ffffff00;
+  background-image: url("../../img/svg/header-search-item.svg");
+  background-size: 16px 16px;
+  background-position: left 15px center;
+  background-repeat: no-repeat;
+  flex-grow: 1;
+}
+
+.header__search-form-button {
+  font-size: 16px;
+  width: 160px;
+  padding: 10px;
+  border: 2px solid #000000;
+  border-radius: 0px 50px 50px 0px;
+  background-color: #ffffff00;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.header__user-navigation-list {
+  padding: 18px 0;
+  display: flex;
+  gap: 44px;
+}
+
+.header__user-navigation-link--input {
+  margin-left: 49px;
+  position: relative;
+}
+
+.header__user-navigation-link--input::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  top: 5px;
+  left: -25px;
+  background-image: url("../../img/svg/header-input-item.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header__user-navigation-link--compare {
+  position: relative;
+}
+
+.header__user-navigation-link--compare::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  top: 5px;
+  left: -25px;
+  background-image: url("../../img/svg/header-compare-item.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header__user-navigation-link--basket-button {
+  cursor: pointer;
+  border: none;
+  background-color: #ffe17f;
+}
+
+.header__user-navigation-item {
+  width: 85px;
+  position: relative;
+}
+
+.header__user-navigation-item--input {
+  width: 265px;
+}
+
+.header__user-navigation-link--output {
+  margin-left: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  opacity: 0.3;
+}
+
+.header__user-navigation-icon-basket {
+  cursor: pointer;
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  top: 8px;
+  left: -20px;
+  background-image: url("../../img/svg/header-basket-item.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: end;
+}
+
+.header__user-navigation-icon-basket::after {
+  content: attr(data-counter);
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 10px;
+  min-width: 18px;
+  height: 18px;
+  left: -13px;
+  top: -3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 10px;
+  padding: 2px;
+}
+
+.header__main-navigation {
+  display: flex;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  gap: 255px;
+}
+
+.header__main-navigation-catalog {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.catalog-button-toggler {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  opacity: 0.3;
+  background-color: #ffe17f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.catalog-button-toggler::after,
+.catalog-button-toggler::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: #000000;
+  transform: rotate(90deg);
+}
+
+.catalog-button-toggler::after {
+  transform: rotate(-180deg);
+}
+
+.main-navigation__list {
+  display: flex;
+  gap: 47px;
+}
