@@ -1,91 +1,56 @@
-.catalog-categories {
-  margin: 430px 0 70px 0;
-}
-
 .catalog-categories__list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
   gap: 40px;
+  margin-bottom: 260px;
 }
 
 .catalog-categories__item {
-  width: 160px;
-  height: 250px;
+  display: flex;
 }
 
 .catalog-categories__link {
-  width: 160px;
-  height: 160px;
-  background-color: #ffe17f;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 33px;
-}
-
-.catalog-categories__link-description {
+  padding-top: 193px;
+  width: 160px;
+  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  margin-top: 253px;
 }
 
-.catalog-categories__link--virtual-reality {
+.catalog-categories__link::before {
+  content: "";
   position: absolute;
-  height: 55px;
-  width: 100px;
-  background-image: url("../../img/svg/catalog-virtual-reality.svg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.catalog-categories__link--monopods {
-  position: absolute;
+  width: 100%;
   height: 160px;
-  width: 85px;
-  background-image: url("../../img/svg/catalog-monopods.svg");
-  background-position: bottom center;
-  background-size: contain;
+  background-color: #ffe17f;
+  top: 0;
+  left: 0;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
-.catalog-categories__link--cameras {
-  position: absolute;
-  height: 90px;
-  width: 72px;
-  background-image: url("../../img/svg/catalog-camera.svg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+.catalog-categories__link--virtual-reality::before {
+  background-image: url("../img/svg/catalog-virtual-reality.svg");
 }
 
-.catalog-categories__link--bracelets {
-  position: absolute;
-  height: 64px;
-  width: 108px;
-  background-image: url("../../img/svg/catalog-braceletes.svg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+.catalog-categories__link--monopods::before {
+  background-image: url("../img/svg/catalog-monopods.svg");
 }
 
-.catalog-categories__link--watches {
-  position: absolute;
-  height: 100px;
-  width: 56px;
-  background-image: url("../../img/svg/catalog-watch.svg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+.catalog-categories__link--cameras::before {
+  background-image: url("../img/svg/catalog-camera.svg");
 }
 
-.catalog-categories__link--quadcopters {
-  position: absolute;
-  height: 70px;
-  width: 140px;
-  background-image: url("../../img/svg/catalog-quadcopter.svg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+.catalog-categories__link--bracelets::before {
+  background-image: url("../img/svg/catalog-braceletes.svg");
+}
+
+.catalog-categories__link--watches::before {
+  background-image: url("../img/svg/catalog-watch.svg");
+}
+
+.catalog-categories__link--quadcopters::before {
+  background-image: url("../img/svg/catalog-quadcopter.svg");
 }

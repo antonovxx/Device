@@ -1,0 +1,104 @@
+.assortment {
+  background-color: #ffffff;
+}
+
+.assortment__container {
+  padding: 70px 40px;
+}
+
+.assortment__heading {
+  background-color: #f0f0f0;
+  padding: 25px 25px 25px 40px;
+  display: flex;
+  align-items: center;
+  gap: 205px;
+}
+
+.assortment__title {
+  margin: 0;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.assortment__filter-list {
+  appearance: none;
+  border: none;
+  line-height: 30px;
+  color: black;
+  background-color: #f0f0f0;
+  background-image: url("../../img/svg/assortment-select-item.svg");
+  background-size: 10px 6px;
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+  cursor: pointer;
+}
+
+.assortment__control-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-items: center;
+}
+
+.assortment__control-up {
+  width: 11px;
+  height: 10px;
+  background-image: url("../../img/svg/assortment-heading-up.svg");
+  background-repeat: no-repeat;
+}
+
+.assortment__control-down {
+  width: 11px;
+  height: 10px;
+  margin-left: 20px;
+  background-image: url("../../img/svg/assortment-heading-down.svg");
+  background-repeat: no-repeat;
+}
+
+.assortment__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.assortment__card {
+  width: 360px;
+}
+
+.assortment__info-wrapper {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.assortment__card-name {
+  margin: 0;
+  padding: 0 110px 0 0;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+.assortment__card-price {
+  min-width: 70px;
+  text-align: end;
+}
+
+.assortment__upload-content {
+  width: 100%;
+  padding: 18px 50px;
+  border: #e5e5e5 solid 3px;
+  background-color: #ffffff;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+}

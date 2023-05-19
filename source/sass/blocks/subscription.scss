@@ -1,7 +1,10 @@
 .subscription {
-  padding: 64px 100px 55px 100px;
-  height: 420px;
-  background: #f0f0f0;
+  padding: 64px 0;
+  background-color: #f0f0f0;
+
+}
+
+.subscription__wrapper {
   display: flex;
   flex-direction: column;
   gap: 150px;
@@ -20,7 +23,7 @@
 
 .subscription__description {
   margin: 0;
-  margin-left: 150px;
+  margin-left: 250px;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -28,7 +31,7 @@
 }
 
 .subscription__form {
-  width: 610px;
+  width: 810px;
   display: flex;
 }
 
@@ -53,7 +56,7 @@
 }
 
 .subcription__details {
-  margin-left: 100px;
+  margin-left: 250px;
   width: 250px;
   height: 55px;
   padding: 15px 50px 10px 50px;

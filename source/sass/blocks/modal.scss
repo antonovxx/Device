@@ -1,0 +1,185 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  overflow: auto;
+  background-color: rgba(#ffffff, 0.5);
+}
+
+.is-open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__content {
+  width: 920px;
+  height: 570px;
+  background-color: #ffffff;
+  border: 10px solid #000000;
+  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 72px 80px 80px 80px;
+  position: relative;
+}
+
+.modal__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 42px;
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 89px;
+  right: 80px;
+  background-image: url("../../img/svg/modal-close-button.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #ffffff;
+  border: none;
+  width: 26px;
+  height: 26px;
+}
+
+.modal__contacts-info-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.modal__contacts-title {
+  margin: 0;
+  margin-bottom: 14px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.modal__contacts-field {
+  width: 350px;
+  height: 60px;
+  border: none;
+  padding: 20px 60px 20px 20px;
+  background-color: #f0f0f0;
+}
+
+.modal__contacts-field--person {
+  background-image: url("../../img/svg/modal-person-icon.svg");
+  background-size: 15px 12px;
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+}
+
+.modal__contacts-field--mail {
+  background-image: url("../../img/svg/modal-mail-icon.svg");
+  background-size: 15px 12px;
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+}
+
+.modal__details-info-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.modal__details-title {
+  margin: 0;
+  margin-bottom: 14px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  position: relative;
+}
+
+.modal__details-tooltip {
+  position: absolute;
+  top: 57%;
+  right: 10%;
+  transform: matrix(50%, 50%);
+  background-color: #ffe17f;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  margin-left: 10px;
+}
+
+.modal__details-tooltip::before {
+  position: absolute;
+  left: 12px;
+  top: 1px;
+  content: "i";
+  width: 26px;
+  height: 26px;
+}
+
+.modal__details-field {
+  width: 540px;
+  border: none;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.modal__details-control {
+  display: flex;
+}
+
+.button-minus {
+  padding: 20px;
+  width: 60px;
+  border: none;
+  background-color: #f0f0f0;
+}
+
+.button-plus {
+  padding: 20px;
+  width: 60px;
+  border: none;
+  background-color: #f0f0f0;
+}
+.modal__details-input {
+  padding: 20px;
+  width: 60px;
+  border: none;
+  background-color: #f0f0f0;
+}
+
+.modal__submit {
+  margin-top: 40px;
+  width: 210px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  position: relative;
+  border: none;
+  background-color: #ffffff;
+  display: flex;
+  z-index: 0;
+}
+
+.modal__submit::after {
+  content: "";
+  top: 50%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 8px;
+  background-color: #ffe17f;
+  position: absolute;
+  z-index: -1;
+}

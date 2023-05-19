@@ -1,22 +1,18 @@
 .header {
-  min-height: 300px;
-  padding: 0;
-  margin: 0;
-  padding: 46px 60px 148px 60px;
   margin: 40px 140px 0 140px;
-  position: relative;
-  background: #ffe17f;
+  display: flex;
+  justify-content: center;
 }
 
 .header__wrapper {
-  background: #ffe17f;
-  width: 100%;
-  height: 100%;
+  width: 1160px;
+  padding: 46px 60px 148px 60px;
+  background-color: #ffe17f;
+  position: relative;
 }
 
-.header__catalog {
-  min-height: 186px;
-  padding: 46px 60px 34px 60px;
+.header--catalog {
+  height: 240px;
 }
 
 .header__logo {
@@ -75,8 +71,12 @@
   gap: 44px;
 }
 
+.header__user-navigation-item--compare {
+  margin-left: 10px;
+}
+
 .header__user-navigation-link--input {
-  margin-left: 49px;
+  margin-left: 20px;
   position: relative;
 }
 
@@ -119,10 +119,11 @@
 .header__user-navigation-item {
   width: 85px;
   position: relative;
+  margin-left: 35px;
 }
 
 .header__user-navigation-item--input {
-  width: 265px;
+  width: 240px;
 }
 
 .header__user-navigation-link--output {
@@ -160,9 +161,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
-  font-size: 10px;
-  line-height: 10px;
+  color: #000000;
+  font-size: 14px;
+  line-height: 17px;
   padding: 2px;
 }
 
@@ -176,41 +177,13 @@
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  gap: 255px;
+  gap: 259px;
 }
 
 .header__main-navigation-catalog {
   display: flex;
   align-items: center;
   gap: 7px;
-}
-
-.catalog-button-toggler {
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  border: 2px solid #000000;
-  border-radius: 50%;
-  opacity: 0.3;
-  background-color: #ffe17f;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.catalog-button-toggler::after,
-.catalog-button-toggler::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 2px;
-  background-color: #000000;
-  transform: rotate(90deg);
-}
-
-.catalog-button-toggler::after {
-  transform: rotate(-180deg);
 }
 
 .main-navigation__list {

@@ -1,7 +1,5 @@
-.products {
-  position: absolute;
-  top: 250px;
-  width: 1160px;
+.products__wrapper {
+  margin-top: -125px;
 }
 
 .products__slide {
@@ -22,6 +20,7 @@
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+  z-index: 10;
 }
 
 .products__slide-description-text {
@@ -85,13 +84,17 @@
   position: relative;
 }
 
+.products__img {
+  position: relative;
+}
+
 .slider-controls-left {
   cursor: pointer;
   content: "";
   width: 20px;
   height: 60px;
   left: 47%;
-  top: 33%;
+  top: 50%;
   position: absolute;
   background-image: url("../../img/svg/swiper-control-right.svg");
   background-repeat: no-repeat;
@@ -103,8 +106,8 @@
   content: "";
   width: 20px;
   height: 60px;
-  right: 96%;
-  top: 33%;
+  right: 85%;
+  top: 50%;
   position: absolute;
   background-image: url("../../img/svg/swiper-control-left.svg");
   background-repeat: no-repeat;

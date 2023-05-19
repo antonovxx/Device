@@ -12,6 +12,7 @@
 @import "./global/fonts.scss";
 @import "./global/reboot.scss";
 @import "./global/utils.scss";
+@import "./global/container.scss";
 
 // Blocks
 // ---------------------------------
@@ -32,6 +33,11 @@
 @import "./blocks/params-container.scss";
 @import "./blocks/filter.scss";
 @import "./blocks/assortment.scss";
+@import "./blocks/catalog-navigation.scss";
+@import "./blocks/basket.scss";
+@import "./blocks/pagination.scss";
+@import "./blocks/modal.scss";
+// @import "./blocks";
 // @import "./blocks";
 
 // ---------------------------------

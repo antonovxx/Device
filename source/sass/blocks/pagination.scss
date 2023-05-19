@@ -1,0 +1,38 @@
+.pagination {
+  width: 100%;
+  min-height: 70px;
+  margin-top: 40px;
+  padding: 25px;
+  background-color: #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pagination__list {
+  display: flex;
+  gap: 30px;
+}
+
+.pagination__item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  opacity: 0.6;
+}
+
+.pagination__button {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.button-back {
+  color: #444444;
+  opacity: 0.3;
+}
