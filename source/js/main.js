@@ -2,41 +2,6 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 
-
-import {isEscapeKey} from '../js/utils/utils.js';
-
-const searchLinkElement = document.querySelector('.delivery__suggestion');
-const modalWindow = document.querySelector('.modal__container');
-const cancelButton = modalWindow.querySelector('.modal__close-button');
-
-const onDocumentKeydown = (evt) => {
-  if(isEscapeKey(evt)) {
-    evt.preventDefault();
-    closeModalWindow();
-  }
-};
-
-const onCloseButtonClick = () => {
-  closeModalWindow();
-};
-
-function closeModalWindow () {
-  modalWindow.classList.add('visually-hidden');
-  document.body.classList.remove('modal-open');
-  document.removeEventListener('keydown', onDocumentKeydown);
-  cancelButton.removeEventListener('click', onCloseButtonClick);
-}
-
-const openModalWindow = () => {
-  modalWindow.classList.remove('visually-hidden');
-  document.body.classList.add('modal-open');
-  document.addEventListener('keydown', onDocumentKeydown);
-  cancelButton.addEventListener('click', onCloseButtonClick);
-};
-
-const openModal = () => searchLinkElement.addEventListener('click', openModalWindow);
-
-
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
