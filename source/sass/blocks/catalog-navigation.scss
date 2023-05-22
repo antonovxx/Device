@@ -1,58 +1,97 @@
 .catalog-navigation {
-  position: relative;
+}
+
+.catalog-navigation__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.catalog-navigation:focus-within .catalog-navigation__list {
+  opacity: 1;
+  visibility: visible;
 }
 
 .catalog-navigation__list {
+  padding: 0 60px 50px 60px;
+  width: 100%;
+  min-height: 180px;
+  left: 0;
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  bottom: 0;
+  bottom: 25px;
   transform: translateY(100%);
   background-color: #ffe17f;
   display: grid;
-  grid-template-columns: 250px 210px 210px;
+  grid-template-columns: 300px 210px 210px;
   grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px 30px;
   transition: visibility 0.3s ease, opacity 0.3s ease;
+  z-index: 10;
 }
 
 .catalog-navigation__item {
   margin-top: 10px;
-  font-family: 'Rubik';
+}
+
+.catalog-navigation__link {
+  font-family: "Rubik";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400; 
   font-size: 16px;
   line-height: 18px;
+  text-transform: initial;
+}
+
+.catalog-navigation__item--special {
+  grid-column: 0/3;
+  grid-row: 3/3;
 }
 
 .catalog-navigation__button-toggler {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
   cursor: pointer;
-  width: 50px;
-  height: 50px;
-  border: 2px solid #000000;
-  border-radius: 50%;
-  opacity: 0.3;
-  background-color: #ffe17f;
+  border: none;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 
-.catalog-navigation__button-toggler::after,
-.catalog-navigation__button-toggler::before {
+.catalog-navigation__button-toggler .catalog-navigation__button-icon {
+  border: 2px solid #000000;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  opacity: 0.4;
+  margin-left: 20px;
+}
+
+.catalog-navigation__button-icon {
+  position: relative;
+}
+
+.catalog-navigation__button-icon::after,
+.catalog-navigation__button-icon::before {
   content: "";
   position: absolute;
+  top: 47%;
+  left: 34%;
   width: 16px;
   height: 2px;
   background-color: #000000;
   transform: rotate(90deg);
 }
 
-.catalog-navigation__button-toggler::after {
+.catalog-navigation__button-icon::after {
   transform: rotate(-180deg);
-}
-
-.catalog-navigation__button-toggler:focus-within + .catalog-navigation__list {
-  opacity: 1;
-  visibility: visible;
 }

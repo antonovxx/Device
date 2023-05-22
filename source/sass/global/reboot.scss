@@ -13,10 +13,10 @@ body {
 html {
   font-style: normal;
   font-weight: 400;
-  font-size: $fz-default;
+  font-size: 16px;
   line-height: 24px;
-  font-family: $ff-placeholder;
-  color: $color-default-black;
+  font-family: "Rubik", sans-serif;
+  color: #000000;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -27,13 +27,11 @@ html {
 }
 
 body {
-  font-family: "Rubik", sans-serif;
-
-  background-color: $color-default-white;
+  background-color: #ffffff;
 }
 
 a {
-  color: $color-default-black;
+  color:#000000;
   text-decoration: none;
 }
 
@@ -46,18 +44,6 @@ video {
 
 textarea {
   resize: none;
-}
-
-// chrome autofill background removal
-// если на проекте у инпутов используются разные цвета фонов\текста -
-// удалите это из глобала и используйте локально с нужными цветами
-// rgba не подойдет, сконвертируйте цвет в hex без прозрачности
-// если в стилях уже используется box-shadow есть другое решение -
-// задать к списку транзишенов `background-color 10000000s ease-out`
-input:-webkit-autofill {
-  box-shadow: inset 0 0 0 1000px $color-default-white;
-
-  -webkit-text-fill-color: $color-default-black;
 }
 
 // firefox placeholder \ invalid fix + ios bdrs

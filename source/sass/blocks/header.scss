@@ -1,21 +1,13 @@
 .header {
-  margin: 40px 140px 0 140px;
-  display: flex;
-  justify-content: center;
-}
-
-.header__wrapper {
-  width: 1160px;
-  padding: 46px 60px 148px 60px;
-  background-color: #ffe17f;
   position: relative;
+  width: 1160px;
+  margin: 40px auto 0 auto;
+  background-color: #ffe17f;
+  padding: 46px 60px 35px 60px;
+  z-index: 1;
 }
 
-.header--catalog {
-  height: 240px;
-}
-
-.header__logo {
+.header__logo-link {
   position: absolute;
   top: -20px;
   left: 60px;
@@ -32,6 +24,7 @@
   align-items: center;
   font-size: 18px;
   line-height: 30px;
+  margin-bottom: 50px;
 }
 
 .header__search-form {
@@ -66,9 +59,14 @@
 }
 
 .header__user-navigation-list {
-  padding: 18px 0;
+  padding: 7px 0;
   display: flex;
   gap: 44px;
+}
+
+.header__user-navigation-link {
+  border: none;
+  background-color: initial;
 }
 
 .header__user-navigation-item--compare {
@@ -127,7 +125,7 @@
 }
 
 .header__user-navigation-link--output {
-  margin-left: 20px;
+  margin-left: 16px;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -139,7 +137,7 @@
   position: absolute;
   width: 13px;
   height: 12px;
-  top: 8px;
+  top: 4px;
   left: -20px;
   background-image: url("../../img/svg/header-basket-item.svg");
   background-size: contain;
@@ -177,7 +175,7 @@
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  gap: 259px;
+  gap: 252px;
 }
 
 .header__main-navigation-catalog {

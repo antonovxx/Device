@@ -1,21 +1,37 @@
 .contacts {
+  position: relative;
+  padding: 40px 0 80px 0;
+  display: grid;
+  justify-items: start;
+}
+
+.contacts::before {
+  content: "";
+  position: absolute;
+  width: 84px;
+  height: 7px;
+  top: 0;
+  left: 0;
+  background-color: #000000;
 }
 
 .contacts__title {
-  margin: 40px 0 18px;
+  margin: 0 0 48px 0;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
 }
 
 .contacts__description {
-  margin: 15px 0 30px 0;
+  margin: 0 0 30px 0;
   font-size: 18px;
   line-height: 30px;
   color: #444444;
 }
 
+
 .contacts__subtitle {
+  margin: 0 0 15px 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;

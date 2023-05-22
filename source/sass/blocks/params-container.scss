@@ -1,5 +1,9 @@
 .params-container {
+
+  background-color: #F0F0F0;
+}
+
+.params-container__wrapper {
   display: grid;
   grid-template-columns: 320px 1fr;
-  background-color: #F0F0F0;
 }
